@@ -528,7 +528,7 @@ background: linear-gradient(180deg,
   bottom: .5rem;
 }
 .about__perfil{
-  width: 220px;
+  width: 2px;
 }
 
 .about__shadow{
@@ -734,3 +734,7 @@ background: linear-gradient(180deg,
 .page-fade-overlay.hide {
   opacity: 0;
 }
+.page-fade-overlay.hide {
+  opacity: 0;
+}
+
