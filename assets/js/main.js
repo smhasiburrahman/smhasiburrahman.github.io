@@ -60,4 +60,5 @@ function runFadeOverlay() {
 window.addEventListener('DOMContentLoaded', () => {
   runFadeOverlay();
   setInterval(runFadeOverlay, 5000);
-});
+})
+};
