@@ -46,9 +46,7 @@ animate(chars2, {
 
 /*=============== CUSTOM CURSOR ===============*/
 
-
 /* Hide custom cursor on links */
-
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 function runFadeOverlay() {
