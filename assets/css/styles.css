@@ -173,9 +173,9 @@ img { max-width: 100%; height: auto; display: block; }
         top: 0;
         width: 280px;
         height: 100vh;
-        background-color: rgba(255, 255, 255, 0.98);
-        backdrop-filter: blur(12px);
-        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        background-color: rgba(255, 255, 255, 0.75);
+        backdrop-filter: blur(20px);
+        box-shadow: 2px 0 10px rgba(0,0,0,0.15);
         transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         display: block;
         padding: 5rem 2rem 2rem;
@@ -239,7 +239,7 @@ img { max-width: 100%; height: auto; display: block; }
 /*==================== HOME SECTION ====================*/
 .home { 
     padding-top: 8rem;
-    padding-bottom: 3rem; 
+    padding-bottom: 6rem; 
 }
 
 .home__container { 
@@ -277,12 +277,12 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* Individual animations */
-.p1 { top: 12%; left: 5%; animation-name: gentleFloat; animation-duration: 10s; }
-.p2 { top: 15%; right: 5%; animation-name: gentleFloat; animation-duration: 12s; animation-delay: 1s; }
-.p3 { bottom: 20%; left: 2%; animation-name: wobble; animation-duration: 9s; animation-delay: 2s; } 
-.p4 { bottom: 45%; right: 2%; animation-name: slideSide; animation-duration: 5s; }
-.p6 { top: 8.5%; left: 35%; animation-name: wobble; animation-duration: 15s; }
-.p7 { bottom: 8%; right: 35%; animation-name: gentleFloat; animation-duration: 11s; animation-direction: alternate-reverse; }
+.p1 { top: 12%; left: 5%; animation-name: wobble; animation-duration: 10s; }
+.p2 { top: 15%; right: 5%; animation-name: wobble; animation-duration: 12s; animation-delay: 1s; }
+.p3 { bottom: 20%; left: 2%; animation-name: gentleFloat; animation-duration: 5s; animation-direction: alternate-reverse; } 
+.p4 { bottom: 38%; right: 2%; animation-name: slideSide; animation-duration: 10s; }
+.p6 { top: 8.5%; left: 35%; animation-name: wobble; animation-duration: 20s; }
+.p7 { bottom: 2%; right: 35%; animation-name: slideSide; animation-duration: 10s; }
 
 @keyframes gentleFloat { 0% { transform: translateY(0); } 100% { transform: translateY(-20px); } }
 @keyframes pulseZoom { 0% { transform: scale(1); } 50% { transform: scale(1.15); } 100% { transform: scale(1); } }
