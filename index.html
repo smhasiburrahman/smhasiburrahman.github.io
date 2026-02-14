@@ -1,190 +1,287 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>S.M. Hasibur Rahman | Portfolio</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fira+Code&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo.png" alt="Logo" class="nav__logo-img">
+                    <span class="nav__logo-name">Hasib<span class="dot">.</span></span>
+                </a>
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+                <!-- Desktop Navigation (hidden on mobile) -->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Stack</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                        <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+                    <!-- Close button inside mobile menu -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
 
-      <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+                <!-- Mobile menu toggle (visible on small screens) -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                    <span class="nav__toggle-text">MENU</span>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+    <main class="main">
+        <section class="home" id="home">
+            <div class="floating-container">
+                <span class="float-item arabic-style p1">الحمد لله</span>
+                <span class="float-item arabic-style p2">توكلتُ على الله</span>
+                <span class="float-item arabic-style p3">لا تيأس</span>
+                
+                <span class="float-item code-style p4">printf("Hello World!");</span>
+                <span class="float-item code-style p5">int main() { return 0; }</span>
+                <span class="float-item code-style p6">if(bug) { fix(); }</span>
+                <span class="float-item code-style p7">char *hasib = "developer";</span>
 
-      <title>Responsive portfolio website Anid - Bedimcode</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-<header class="header" id="header">
-  <div class="blob-animate"></div>
-  <nav class="nav container">
-    <a href="#" class="nav__logo">Portfolio.</a>
-    <div class="nav__menu">
-<ul class="nav__list">
-  <li>
-    <a href="#about" class="nav__link">About Us</a>
-  </li>
+                <span class="float-item arabic-style p8">2*2=4</span>
+                <span class="float-item arabic-style p9">0112330109</span>
+            </div>
 
-  <li>
-    <a href="#skills" class="nav__link">Skills</a>
-  </li>
-  
-  <li>
-    <a href="#work" class="nav__link">Works & Education</a>
-  </li>
-  
-  <li>
-    <a href="#projects" class="nav__link">Projects</a>
-  </li>
-  
-  <li>
-    <a href="#contact" class="nav__link">Contact</a>
-  </li>
-</ul>
-    </div>
-  </nav>
-</header>
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <span class="home__profession">Developer & Database Engineer</span>
+                    <h1 class="home__title">Hello, I'm <br> S.M. Hasibur Rahman</h1>
+                    <p style="margin-bottom: 2rem; color: var(--text-light);">
+                        Crafting modern web and mobile apps with clean code and strong database foundations.
+                    </p>
+                    <div class="button-group">
+                        <a href="#contact" class="btn-snake">Hire Me <i class="ri-briefcase-4-line"></i></a>
+                        <a href="assets/pdf/Cv.pdf" download class="btn-snake">Download Resume <i class="ri-download-line"></i></a>
+                    </div>
+                </div>
 
+                <div class="home__image-wrapper">
+                    <div class="home__blob"></div>
+                    <img src="assets/img/home-perfil.png" alt="Profile" class="home__img">
+                </div>
+            </div>
+        </section>
 
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!-- CUSTOM CURSOR -->
-          
-         
-         <!--==================== HOME ====================-->
-      <section class="home section">
-  <div class="home__shadow"></div>
+        <section class="section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <div class="container grid" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <p style="font-size: 1.1rem; line-height: 1.8;">
+                    Hey there! I'm a <b>CSE</b> student at United International University <b>(UIU)</b> with a passion for building real solutions. I'm learning both <b>Flutter</b> for cross-platform mobile apps and Laravel with HTML/CSS for <b>web development</b>, turning designs into clean, responsive interfaces.
+                    <br><br>
+                    What really excites me? <b>Databases</b>. There's something satisfying about structuring data and optimizing systems. I believe great apps need both beautiful UI and solid backend architecture. Always learning, always building.
+                </p>
+            </div>
+        </section>
 
-  <div class="home__container container grid">
-<div class="home__data">
-  <h3 class="home__greeting">Hello, I'm</h3>
-  <h2 class="home__name">S,M Hasibur <br>Rahman</h2>
-  <p class="home__desc slide-in-left">
-   Beginner developer turning small ideas into clean, working projects.
-</div>
+        <section class="section" id="skills">
+            <h2 class="section__title">Tech Stack</h2>
+            <div class="container">
+                <h3 class="skills__section-title">Languages & Core Technologies</h3>
+                <div class="skills__grid">
+                    <div class="skill-card"><img src="assets/img/stack/c.png" alt="C"><span>C</span></div>
+                    <div class="skill-card"><img src="assets/img/stack/cpp.png" alt="C++"><span>C++</span></div>
+                    <div class="skill-card"><img src="assets/img/stack/java.png" alt="Java"><span>Java</span></div>
+                    <div class="skill-card"><img src="assets/img/stack/dart.png" alt="Dart"><span>Dart</span></div>
+                    <div class="skill-card"><img src="assets/img/stack/php.png" alt="PHP"><span>PHP</span></div>
+                    <div class="skill-card"><img src="assets/img/stack/html.png" alt="HTML"><span>HTML</span></div>
+                    <div class="skill-card"><img src="assets/img/stack/css.png" alt="CSS"><span>CSS</span></div>
+                    <div class="skill-card"><img src="assets/img/stack/js.png" alt="JS"><span>JavaScript</span></div>
+                </div>
+                <h3 class="skills__section-title">Tools & Platforms</h3>
+                <div class="skills__grid">
+                    <div class="skill-card"><img src="assets/img/stack/git.png" alt="Git"><span>Git</span></div>
+                    <div class="skill-card"><img src="assets/img/stack/github.png" alt="GitHub"><span>GitHub</span></div>
+                    <div class="skill-card"><img src="assets/img/stack/vscode.png" alt="VScode"><span>VScode</span></div>
+                    <div class="skill-card"><img src="assets/img/stack/mysql.png" alt="MySQL"><span>MySQL</span></div>
+                    <div class="skill-card"><img src="assets/img/stack/phps.png" alt="PhpStorm"><span>PhpStorm</span></div>
+                </div>
+                <h3 class="skills__section-title">Development Environment</h3>
+                <div class="skills__grid">
+                    <div class="skill-card"><img src="assets/img/stack/herd.png" alt="Laravel Herd"><span>Laravel Herd</span></div>
+                    <div class="skill-card"><img src="assets/img/stack/xampp.png" alt="Xampp"><span>Xampp</span></div>
+                </div>
+            </div>
+        </section>
 
+        <section class="section" id="projects">
+            <h2 class="section__title">Projects</h2>
+            <div class="container grid projects__container">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">OceanEye</h3>
+                        <p class="project-desc">
+                            A comprehensive ocean monitoring system built with Laravel. It tracks marine data to promote sustainable ecosystem management and provides real-time analysis for researchers.
+                        </p>
+                        <a href="https://github.com/the-hasib/OceanEye" target="_blank" class="btn-snake project-btn-small">View Project <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">PowerGrip (NeuroGrasp)</h3>
+                        <p class="project-desc">
+                            Imagine losing the ability to hold a cup of coffee. For millions of stroke survivors, this is reality. PowerGrip is our attempt to bridge the gap between expensive medical equipment and affordable home therapy. We are building a smart exoskeleton that "listens" to muscle signals.
+                        </p>
+                        <a href="https://github.com/the-hasib/PowerGrip-NeuroGrasp-" target="_blank" class="btn-snake project-btn-small">View Project <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">My Portfolio</h3>
+                        <p class="project-desc">
+                            The responsive, personal portfolio website you are currently viewing. Built with HTML, CSS, and JavaScript, focusing on clean UI/UX, animations, and a professional dark/light theme structure.
+                        </p>
+                        <a href="#" class="btn-snake project-btn-small">View Project <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                </div>
+                <div class="project-card upload-soon">
+                    Upload Soon...
+                </div>
+            </div>
+        </section>
 
+        <section class="section" id="education">
+            <h2 class="section__title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-year">- Present</span>
+                        <h3 class="timeline-title">B.Sc. in CSE</h3>
+                        <span class="timeline-place">United International University (UIU)</span>
+                        <div class="timeline-info">Current Student</div>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <span class="timeline-year">-2022</span>
+                        <h3 class="timeline-title">HSC</h3>
+                        <span class="timeline-place">R.K.B.K. Harish Chandra Collegiate School</span>
+                        <div class="timeline-info">Group: Science <br> Result/GPA: 5.00</div>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <span class="timeline-year">-2020</span>
+                        <h3 class="timeline-title">Dakhil</h3>
+                        <span class="timeline-place">Mothbati G G P G Dakhil Madrasha</span>
+                        <div class="timeline-info">Group: Science <br> Result/GPA: 4.00</div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="home__image">
-    </div>
+        <section class="section" id="blog">
+            <h2 class="section__title">My Blog</h2>
+            <div class="container">
+                <div class="upload-soon" style="background: white; border: 1px solid var(--grid-line-color);">
+                    Blog posts coming soon!
+                </div>
+            </div>
+        </section>
 
-   <div class="home__image">
-  <div class="blob-animate"></div>
-  <img src="assets/img/home-perfil.png" alt="image" class="home__perfil">
-</div>
+        <section class="section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <div class="contact__container container">
+                <p class="contact__text">
+                    Always open to collaborate! Let's build something amazing! Feel free to reach out!
+                </p>
+                
+                <div class="contact__info-grid">
+                    <div class="contact-snake-box">
+                        <div class="contact-box-content">
+                            <i class="ri-phone-line contact-icon"></i>
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:+8801711263564" class="contact-value">01711-263564</a>
+                        </div>
+                    </div>
+                    <div class="contact-snake-box">
+                        <div class="contact-box-content">
+                            <i class="ri-mail-send-line contact-icon"></i>
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:hasib.cse.uiu@gmail.com" class="contact-value">hasib.cse.uiu</a>
+                        </div>
+                    </div>
+                    <div class="contact-snake-box">
+                        <div class="contact-box-content">
+                            <i class="ri-linkedin-fill contact-icon"></i>
+                            <span class="contact-label">LinkedIn</span>
+                            <a href="https://www.linkedin.com/in/the-hasib" target="_blank" class="contact-value">the-hasib</a>
+                        </div>
+                    </div>
+                    <div class="contact-snake-box">
+                         <div class="contact-box-content">
+                            <i class="ri-github-fill contact-icon"></i>
+                            <span class="contact-label">GitHub</span>
+                            <a href="https://github.com/the-hasib" target="_blank" class="contact-value">the-hasib</a>
+                        </div>
+                    </div>
+                     <div class="contact-snake-box">
+                        <div class="contact-box-content">
+                           <i class="ri-facebook-fill contact-icon"></i>
+                           <span class="contact-label">Facebook</span>
+                           <a href="https://facebook.com/cotosaheb00" target="_blank" class="contact-value">cotosaheb00</a>
+                       </div>
+                   </div>
+                     <div class="contact-snake-box">
+                        <div class="contact-box-content">
+                           <i class="ri-instagram-line contact-icon"></i>
+                           <span class="contact-label">Instagram</span>
+                           <a href="https://instagram.com/cotosaheb00" target="_blank" class="contact-value">cotosaheb00</a>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<div class="home__info">
-  <h3 class="home__split">Creative</h3>
-  <!-- Insert profession, short text -->
-  <h2 class="home__profession-1">Flutter Developer &</h2>
-  <h2 class="home__profession-2">Frontent Designer</h2>
-</div>
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">S M Hasibur Rahman.</h1>
+            <ul class="footer__links">
+                <li><a href="#about" class="footer__link">About</a></li>
+                <li><a href="#projects" class="footer__link">Projects</a></li>
+                <li><a href="#blog" class="footer__link">Blog</a></li>
+                <li><a href="#contact" class="footer__link">Contact</a></li>
+            </ul>
+            <div class="footer__socials">
+                <a href="https://www.facebook.com/cotosaheb00" class="footer__social-link" target="_blank"><i class="ri-facebook-fill"></i></a>
+                <a href="https://github.com/the-hasib" class="footer__social-link" target="_blank"><i class="ri-github-fill"></i></a>
+                <a href="https://www.linkedin.com/in/the-hasib" class="footer__social-link" target="_blank"><i class="ri-linkedin-fill"></i></a>
+            </div>
+            <span style="font-size: 0.8rem; color: var(--text-light);">
+                &#169; S.M. Hasibur Rahman. All rights reserved.
+            </span>
+        </div>
+    </footer>
 
-<div class="home__social">
-  <a href="https://www.linkedin.com/" target="_blank" class="home__social-link">
-    <i class="ri-linkedin-box-line"></i>
-  </a>
+    <a href="#" class="scrollup" id="scroll-up">
+        &#8593;
+    </a>
 
-  <a href="https://github.com/the-hasib" target="_blank" class="home__social-link">
-    <i class="ri-github-line"></i>
-  </a>
-
-  <a href="https://www.facebook.com/cotosaheb00" target="_blank" class="home__social-link">
-    <i class='ri-facebook-line'></i>
-  </a>
-    <a href="https://www.facebook.com" target="_blank" class="home__social-link">
-   <i class='ri-twitter-line'></i>
-  </a>
-</div>
-<a href="assets/pdf/Cv.pdf" download target="_blank" class="home__cv">
-  RESUME <i class="ri-file-list-2-line"></i>
-</a>
-
-
-  </div>
-</section>
-
-
-         <!--==================== ABOUT ====================-->
-<section class="about section" id="about">
-  <div class="about__shadow"></div>
-  
-  <div class="about__container container grid">
-    <div class="about__data">
-      <h2 class="section__title">
-        <span>Driven by Curiosity </span>
-        <br> & Creativity
-      </h2>
-      
-      <p class="about__description">
-         Hey there! I'm a <b>CSE student at UIU</b> with a passion for building real solutions. I started with<b> Flutter</b>, creating smooth mobile apps that users love. Then I jumped into <b>frontend development</b>, turning designs into clean, responsive interfaces.
-What really excites me? <b> Databases.</b> There's something satisfying about structuring data and optimizing systems. I believe great apps need both beautiful UI and solid backend architecture. Always learning, always building.
-
-      </p>
-      <a href="assets/pdf/Cv.pdf" download target="_blank" class="button">
-  Resume <i class="ri-file-list-2-line"></i>
-</a>
-
-    </div>
-    
-    <div class="about__image">
-  <div class="blob-animate"></div>
-  <div class="blob-animate"></div>
-  <img src="assets/img/about-perfil.png" alt="image" class="about__perfil">
-</div>
-
-    </div>
-  </div>
-</section>
-
-
-         <!--==================== PROJECTS ====================-->
-         <section class="projects section" id="projects">
-            
-         </section>
-
-
-         <!--==================== CONTACT ====================-->
-         <section class="contact section" id="contact"> 
-         </section>
-      </main>
-
-         <!--==================== SERVICES ====================-->
-         <section class="services section">
-
-         </section>
-
-         <!--==================== TESTIMONIALS ====================-->
-         <section class="testimonials section">
-
-         </section>
-
-         <!--==================== WORK ====================-->
-         <section class="work section">
-
-         </section>
-      <!--==================== FOOTER ====================-->
-      <footer class="footer grid">
-         
-      </footer>
-      
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src="assets/js/scrollreveal.min.js"></script>
-
-      <!--=============== ANIME JS ===============-->
-      <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
-
-      <!--=============== SWIPER JS ===============-->
-      <script src="assets/js/swiper-bundle.min.js"></script>
-
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-      <div class="page-fade-overlay"></div>
-
-   </body>
+    <!-- ScrollReveal library -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <!-- Main JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
