@@ -731,3 +731,204 @@ img { max-width: 100%; height: auto; display: block; }
       max-width: 450px; 
   }
 }/* Updated */
+/*==================== BLOG PAGE DESIGN ====================*/
+.blog-layout {
+    display: flex;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+/* Fixed & Glassmorphism Sidebar */
+.blog-sidebar {
+    background-color: rgba(235, 232, 232, 0.576);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-right: 1px solid var(--grid-line-color);
+    padding: 3rem 2rem;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+    z-index: 100;
+}
+
+.sidebar-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    border: 4px solid var(--bg-color);
+    box-shadow: var(--box-shadow);
+}
+
+.sidebar-title {
+    color: var(--title-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.sidebar-subtitle {
+    color: var(--primary-color);
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-bio {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.sidebar-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--grid-line-color);
+}
+
+.sidebar-contact a {
+    color: var(--text-color);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: 0.3s;
+}
+
+.sidebar-contact a:hover {
+    color: var(--primary-color);
+}
+
+.sidebar-nav {
+    margin-bottom: 2rem;
+}
+
+.sidebar-nav a {
+    color: var(--title-color);
+    font-weight: 700;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sidebar-nav a:hover {
+    color: var(--primary-color);
+}
+
+.sidebar-socials {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.sidebar-socials a {
+    color: var(--title-color);
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.sidebar-socials a:hover {
+    color: var(--primary-color);
+}
+
+/* Right Wrapper (To prevent overlapping with fixed sidebar) */
+.blog-right-wrapper {
+    margin-left: 350px; 
+    width: calc(100% - 350px);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.blog-main-content {
+    padding: 4rem 10%;
+    flex-grow: 1; 
+}
+
+.blog-post-card {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--grid-line-color);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 3rem;
+    transition: 0.3s;
+}
+
+.blog-post-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+}
+
+.blog-post-title a {
+    color: var(--title-color);
+    font-size: 1.8rem;
+    transition: 0.3s;
+}
+
+.blog-post-title a:hover {
+    color: var(--primary-color);
+}
+
+.blog-post-date {
+    display: block;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--code-font);
+}
+
+.blog-post-excerpt {
+    color: var(--text-color);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+/* Simple Footer Styling */
+.blog-footer {
+    text-align: center;
+    padding: 2rem 0;
+    border-top: 1px solid var(--grid-line-color);
+    background-color: transparent;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 968px) {
+    .blog-layout {
+        flex-direction: column;
+    }
+    .blog-sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--grid-line-color);
+        padding: 3rem 1.5rem;
+        align-items: center;
+        text-align: center;
+    }
+    .sidebar-contact {
+        align-items: center;
+    }
+    .sidebar-socials {
+        justify-content: center;
+    }
+    .blog-right-wrapper {
+        margin-left: 0;
+        width: 100%;
+    }
+    .blog-main-content {
+        padding: 3rem 1.5rem;
+    }
+}
