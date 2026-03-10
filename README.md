@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&duration=3000&pause=1000&color=2563EB&center=true&vCenter=true&width=435&lines=Hi+there!+I'm+Hasib;Developer+%26+Database+Engineer;Flutter+%26+Laravel+Expert;CSE+Student+%40+UIU" alt="Typing SVG" />
 </div>
-
+ 
 <div align="center">
   <h3>🤲 Hasbunallahu Wa Ni’mal Wakil</h3>
   <p><i>"Allah is sufficient for us, and He is the best Disposer of affairs. "</i></p>
