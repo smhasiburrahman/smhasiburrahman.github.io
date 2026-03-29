@@ -333,11 +333,12 @@ img { max-width: 100%; height: auto; display: block; }
     position: relative;
     justify-self: center;
     width: 100%;
-    max-width: 320px;
-    aspect-ratio: 1/1.2;
+    max-width: 280px; 
+    aspect-ratio: 1 / 1.2;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .4s; 
 }
 
 .home__blob {
