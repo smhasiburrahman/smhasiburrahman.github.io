@@ -1,0 +1,13 @@
+title: Hasib's Blog
+description: Developer & Database Enthusiast
+url: "https://smhasiburrahman.github.io"
+baseurl: ""
+
+author:
+  name: S.M. Hasibur Rahman
+
+plugins:
+  - jekyll-feed
+
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
