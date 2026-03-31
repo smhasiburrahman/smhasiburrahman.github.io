@@ -1,6 +1,6 @@
 ---
-layout: default
-title: "100 Days of Flutter - Day 1"
+layout: post
+title: "100 Days Of Flutter Challenge"
 date: 2026-03-31
 ---
 
