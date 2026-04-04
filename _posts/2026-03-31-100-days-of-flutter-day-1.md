@@ -6,7 +6,7 @@ date: 2026-03-31
 
 <div class="post-hero">
   <div class="post-hero-text">
-    <span class="post-tag">🚀 100 Days Challenge</span>
+    <span class="post-tag">100 Days Challenge</span>
     <p>My journey of learning <strong>Flutter</strong> from scratch and building real-world apps.</p>
   </div>
   <div class="post-hero-img">
@@ -15,100 +15,86 @@ date: 2026-03-31
 </div>
 
 <div class="day-card">
-
-## Day 1 — Flutter Journey Begins
-
-**What I learned:**
-- What is Flutter and Dart
-- How to setup Flutter environment
-- Created my first Hello World app
-
-**What is Flutter?**
-
-Flutter is Google's UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.
-
+  <h2>Day 1 — Flutter Journey Begins</h2>
+  <p><strong>What I learned:</strong></p>
+  <ul>
+    <li>What is Flutter and Dart</li>
+    <li>How to setup Flutter environment</li>
+    <li>Created my first Hello World app</li>
+  </ul>
+  <p><strong>What is Flutter?</strong></p>
+  <p>Flutter is Google's UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.</p>
 </div>
 
 <div class="day-card">
+  <h2>Day 2 — Dart Language Basics</h2>
 
-## Day 2 — Dart Language Basics
+  <p><strong>What I learned:</strong></p>
+  <ul>
+    <li>Dart is case sensitive</li>
+    <li>Statements and Semicolons</li>
+    <li>Comments in Dart</li>
+    <li>Dart Keywords</li>
+    <li>Variables and Data Types</li>
+    <li>Boolean in Dart</li>
+  </ul>
 
-**What I learned:**
-- Dart is case sensitive
-- Statements and Semicolons
-- Comments in Dart
-- Dart Keywords
-- Variables and Data Types
-- Boolean in Dart
+  <h3>Dart is Case Sensitive</h3>
+  <p>In Dart, <code>name</code> and <code>Name</code> are two different things. Always be careful with uppercase and lowercase letters.</p>
 
-**Dart is Case Sensitive**
-
-In Dart, `name` and `Name` are two different things. Always be careful with uppercase and lowercase letters.
-
-**Statements and Semicolons**
-
-Every line of instruction in Dart is called a statement. Each statement must end with a semicolon `;`
-```dart
-void main() {
+  <h3>Statements and Semicolons</h3>
+  <p>Every line of instruction in Dart is called a statement. Each statement must end with a semicolon <code>;</code></p>
+  <pre><code>void main() {
   print("Hello Dart");
-}
-```
+}</code></pre>
 
-**Comments in Dart**
-
-Comments are notes in your code that Dart ignores when running.
-```dart
-// This is a single line comment
+  <h3>Comments in Dart</h3>
+  <p>Comments are notes in your code that Dart ignores when running.</p>
+  <pre><code>// This is a single line comment
 
 /* This is a
-   multi-line comment */
-```
+   multi-line comment */</code></pre>
 
-**Dart Keywords**
+  <h3>Dart Keywords</h3>
+  <p>Keywords are reserved words in Dart that have special meaning. Examples: <code>void</code>, <code>var</code>, <code>int</code>, <code>double</code>, <code>bool</code>, <code>String</code>, <code>if</code>, <code>else</code>, <code>return</code></p>
+  <blockquote>You cannot use keywords as variable names.</blockquote>
 
-Keywords are reserved words in Dart that have special meaning. Examples: `void`, `var`, `int`, `double`, `bool`, `String`, `if`, `else`, `for`, `while`, `return` etc.
-
-> You cannot use keywords as variable names.
-
-**Variables and Data Types**
-
-A variable is a container that stores data. Dart has the following data types:
-
-| Type | Description | Example |
-|------|-------------|---------|
-| `int` | Whole numbers | `10`, `25` |
-| `double` | Decimal numbers | `3.14` |
-| `String` | Text | `"Hello"` |
-| `bool` | True or False | `true`, `false` |
-```dart
-void main() {
+  <h3>Variables and Data Types</h3>
+  <p>A variable is a container that stores data. Dart has the following data types:</p>
+  <table>
+    <thead>
+      <tr><th>Type</th><th>Description</th><th>Example</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>int</code></td><td>Whole numbers</td><td><code>10, 25</code></td></tr>
+      <tr><td><code>double</code></td><td>Decimal numbers</td><td><code>3.14</code></td></tr>
+      <tr><td><code>String</code></td><td>Text</td><td><code>"Hello"</code></td></tr>
+      <tr><td><code>bool</code></td><td>True or False</td><td><code>true, false</code></td></tr>
+    </tbody>
+  </table>
+  <pre><code>void main() {
   var intNumber = 10;
   print(intNumber); // Output: 10
-}
-```
+}</code></pre>
 
-**Variable Name Rules**
+  <h3>Variable Name Rules</h3>
+  <ul>
+    <li>Variable names are case sensitive — <code>sum</code> and <code>Sum</code> are different</li>
+    <li>Use camelCase — <code>intNumber</code>, <code>myName</code></li>
+    <li>Keep names short and meaningful</li>
+    <li>Cannot start with a number</li>
+  </ul>
 
-- Variable names are case sensitive (`sum` and `Sum` are different)
-- Use camelCase for variable names — `intNumber`, `myName`
-- Keep names short and meaningful
-- Cannot start with a number
-
-**Boolean in Dart**
-
-A boolean stores only two values — `true` or `false`.
-```dart
-void main() {
+  <h3>Boolean in Dart</h3>
+  <p>A boolean stores only two values — <code>true</code> or <code>false</code>.</p>
+  <pre><code>void main() {
   bool isFlutterFun = true;
   bool isDartHard = false;
 
   print(isFlutterFun); // Output: true
   print(isDartHard);   // Output: false
-}
-```
+}</code></pre>
 
-**Key Takeaway**
-
-Dart is a strongly typed, case-sensitive language. Every statement ends with `;` and variables must have proper names following camelCase convention.
-
+  <h3>Key Takeaway</h3>
+  <p>Dart is a strongly typed, case-sensitive language. Every statement ends with <code>;</code> and variables must have proper names following camelCase convention.</p>
 </div>
