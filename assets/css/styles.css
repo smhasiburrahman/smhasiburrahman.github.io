@@ -1041,3 +1041,13 @@ img { max-width: 100%; height: auto; display: block; }
     padding-bottom: 0.5rem;
     border-bottom: 1.5px solid #DBEAFE;
 }
+
+/* Day Card Updated */
+.day-card {
+    background: #F8FAFF !important;
+    border: 1.5px solid #DBEAFE;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 4px 20px rgba(37,99,235,0.08);
+}
