@@ -1007,3 +1007,37 @@ img { max-width: 100%; height: auto; display: block; }
     border-top: 2px dashed #DBEAFE;
     margin: 2rem 0;
 }
+
+/* Copy Button */
+.copy-btn {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.4rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.copy-btn:hover { background: var(--primary-dark); }
+
+/* Day Card */
+.day-card {
+    border: 1.5px solid #DBEAFE;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    background: #FAFCFF;
+    box-shadow: 0 2px 12px rgba(37,99,235,0.06);
+}
+.day-card h2 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1.5px solid #DBEAFE;
+}
