@@ -28,12 +28,93 @@ Flutter is Google's UI toolkit for building beautiful, natively compiled applica
 
 ---
 
-## Day 2 — Dart Basics! 🎯
+---
+
+## Day 2 — Dart Language Basics! 🎯
 
 ### What I learned:
-✅ Variables and Data Types  
-✅ Functions in Dart  
-✅ OOP concepts in Dart  
+✅ Dart is case sensitive  
+✅ Statements and Semicolons  
+✅ Comments in Dart  
+✅ Dart Keywords  
+✅ Variables & Data Types  
+✅ Boolean in Dart  
 
-### What is Dart?
-Dart is the programming language used to write Flutter apps. It is fast, strongly typed, and easy to learn.
+---
+
+### 📌 Dart is Case Sensitive
+In Dart, `name` and `Name` are two different things. Always be careful with uppercase and lowercase letters.
+
+---
+
+### 📌 Statements & Semicolons
+Every line of instruction in Dart is called a **statement**. Each statement must end with a semicolon `;`
+```dart
+void main() {
+  print("Hello Dart");
+}
+```
+
+---
+
+### 📌 Comments in Dart
+Comments are notes in your code that Dart ignores when running.
+```dart
+// This is a single line comment
+
+/* This is a
+   multi-line comment */
+```
+
+---
+
+### 📌 Dart Keywords
+Keywords are reserved words in Dart that have special meaning. Examples: `void`, `var`, `int`, `double`, `bool`, `String`, `if`, `else`, `for`, `while`, `return` etc.
+
+> ⚠️ You cannot use keywords as variable names.
+
+---
+
+### 📌 Variables & Data Types
+A variable is a container that stores data. Dart has the following data types:
+
+| Type | Description | Example |
+|------|-------------|---------|
+| `int` | Whole numbers | `10`, `25` |
+| `double` | Decimal numbers | `3.14` |
+| `String` | Text | `"Hello"` |
+| `bool` | True or False | `true`, `false` |
+```dart
+void main() {
+  var intNumber = 10;
+  print(intNumber); // Output: 10
+}
+```
+
+---
+
+### 📌 Variable Name Rules
+- Variable names are **case sensitive** (`sum` ≠ `Sum`)
+- Use **camelCase** for variable names → `intNumber`, `myName`
+- Keep names **short and meaningful**
+- Cannot start with a number
+
+---
+
+### 📌 Boolean in Dart
+A boolean stores only two values — `true` or `false`.
+```dart
+void main() {
+  bool isFlutterFun = true;
+  bool isDartHard = false;
+  
+  print(isFlutterFun); // Output: true
+  print(isDartHard);   // Output: false
+}
+```
+
+---
+
+### 💡 Today's Key Takeaway
+Dart is a strongly typed, case-sensitive language. Every statement ends with `;` and variables must have proper names following camelCase convention.
+
